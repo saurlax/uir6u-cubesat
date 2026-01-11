@@ -1,4 +1,4 @@
-# satellite
+# UIR6U CubeSat
 
 This is a SDR-based amateur satellite project based on STM32H743VIT6 microcontroller. Feel free to explore and contribute!
 
@@ -12,7 +12,7 @@ This is a SDR-based amateur satellite project based on STM32H743VIT6 microcontro
 STM32CubeIDE is not required for this project.
 
 ```bash
-$ git clone https://github.com/saurlax/satellite.git
+$ git clone https://github.com/saurlax/uir6u-cubesat.git
 ```
 
 Then open the project folder in VS Code, the extension should automatically detect the project and set up the environment.
