@@ -1,0 +1,4 @@
+BasedOnStyle: GNU
+IndentWidth: 2
+BreakBeforeBraces: Allman
+PointerAlignment: Right
