@@ -57,6 +57,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define WAKEUP_Pin GPIO_PIN_13
+#define WAKEUP_GPIO_Port GPIOC
+#define GPIO1_Pin GPIO_PIN_0
+#define GPIO1_GPIO_Port GPIOD
+#define GPIO2_Pin GPIO_PIN_1
+#define GPIO2_GPIO_Port GPIOD
+#define GPIO3_Pin GPIO_PIN_2
+#define GPIO3_GPIO_Port GPIOD
+#define GPIO4_Pin GPIO_PIN_3
+#define GPIO4_GPIO_Port GPIOD
+#define GPIO5_Pin GPIO_PIN_4
+#define GPIO5_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
 
