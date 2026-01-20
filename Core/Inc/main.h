@@ -57,18 +57,34 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define WAKEUP_Pin GPIO_PIN_13
-#define WAKEUP_GPIO_Port GPIOC
-#define GPIO1_Pin GPIO_PIN_0
-#define GPIO1_GPIO_Port GPIOD
-#define GPIO2_Pin GPIO_PIN_1
-#define GPIO2_GPIO_Port GPIOD
-#define GPIO3_Pin GPIO_PIN_2
-#define GPIO3_GPIO_Port GPIOD
+#define TXPLL__EN_Pin GPIO_PIN_0
+#define TXPLL__EN_GPIO_Port GPIOC
+#define TXPLL_LD_Pin GPIO_PIN_3
+#define TXPLL_LD_GPIO_Port GPIOC
+#define TEMP_Pin GPIO_PIN_0
+#define TEMP_GPIO_Port GPIOA
+#define TXPLL__CE_Pin GPIO_PIN_1
+#define TXPLL__CE_GPIO_Port GPIOA
+#define FAULT3V3_Pin GPIO_PIN_7
+#define FAULT3V3_GPIO_Port GPIOE
+#define TXPLL__ENE13_Pin GPIO_PIN_13
+#define TXPLL__ENE13_GPIO_Port GPIOE
+#define TXPLL__CEB13_Pin GPIO_PIN_13
+#define TXPLL__CEB13_GPIO_Port GPIOB
+#define AIC3104_RST_Pin GPIO_PIN_13
+#define AIC3104_RST_GPIO_Port GPIOD
+#define PA_EN_Pin GPIO_PIN_7
+#define PA_EN_GPIO_Port GPIOC
+#define ADF7021_SWD_Pin GPIO_PIN_0
+#define ADF7021_SWD_GPIO_Port GPIOD
+#define ADF7021_EN_Pin GPIO_PIN_1
+#define ADF7021_EN_GPIO_Port GPIOD
 #define GPIO4_Pin GPIO_PIN_3
 #define GPIO4_GPIO_Port GPIOD
 #define GPIO5_Pin GPIO_PIN_4
 #define GPIO5_GPIO_Port GPIOD
+#define WDI_Pin GPIO_PIN_5
+#define WDI_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
