@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "aic3104.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -136,6 +136,21 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
+
+  /* Initialize AIC3104 codec */
+  AIC3104_Config_t aic3104_cfg = {
+      .hi2c = &hi2c1,
+      .hi2s = &hi2s1,
+      .reset_port = GPIOD,
+      .reset_pin = AIC3104_RST_Pin,
+      .mclk_freq = 12288000,     /* 12.288 MHz MCLK */
+      .sample_rate = AIC3104_FS_48K,
+      .i2s_mode = AIC3104_MODE_MASTER
+  };
+  
+  if (AIC3104_Init(&aic3104_cfg) != HAL_OK) {
+      Error_Handler();
+  }
 
   /* USER CODE END 2 */
 
